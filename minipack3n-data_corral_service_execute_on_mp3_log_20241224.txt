@@ -1,0 +1,59 @@
+[root@localhost brandon]# data_corral_service -config_file ./led_manager.json -refresh_interval_ms 10000
+I1224 13:04:37.078159 11249 PlatformNameLib.cpp:73] Platform name read from cache: MONTBLANC
+I1224 13:04:37.078191 11249 ConfigLib.cpp:48] Using config file: ./led_manager.json
+I1224 13:04:37.078228 11249 ConfigValidator.cpp:10] Validating the config
+I1224 13:04:37.078232 11249 ConfigValidator.cpp:12] Validating the system LED config
+I1224 13:04:37.078237 11249 ConfigValidator.cpp:63] Validating the LED config for fruType: FAN
+I1224 13:04:37.078241 11249 ConfigValidator.cpp:63] Validating the LED config for fruType: PSU
+I1224 13:04:37.078244 11249 ConfigValidator.cpp:63] Validating the LED config for fruType: SMB
+I1224 13:04:37.078248 11249 ConfigValidator.cpp:75] Validating the FRU config for fru: FAN1
+I1224 13:04:37.078252 11249 ConfigValidator.cpp:75] Validating the FRU config for fru: FAN2
+I1224 13:04:37.078255 11249 ConfigValidator.cpp:75] Validating the FRU config for fru: FAN3
+I1224 13:04:37.078258 11249 ConfigValidator.cpp:75] Validating the FRU config for fru: FAN4
+I1224 13:04:37.078262 11249 ConfigValidator.cpp:75] Validating the FRU config for fru: FAN5
+I1224 13:04:37.078265 11249 ConfigValidator.cpp:75] Validating the FRU config for fru: FAN6
+I1224 13:04:37.078268 11249 ConfigValidator.cpp:75] Validating the FRU config for fru: FAN7
+I1224 13:04:37.078271 11249 ConfigValidator.cpp:75] Validating the FRU config for fru: FAN8
+I1224 13:04:37.078274 11249 ConfigValidator.cpp:75] Validating the FRU config for fru: PSU_L
+I1224 13:04:37.078278 11249 ConfigValidator.cpp:75] Validating the FRU config for fru: PSU_R
+I1224 13:04:37.078281 11249 ConfigValidator.cpp:75] Validating the FRU config for fru: SMB
+I1224 13:04:37.078388 11250 FruPresenceExplorer.cpp:26] Detecting presence of FRUs
+I1224 13:04:37.078404 11250 FruPresenceExplorer.cpp:34] Detecting presence of FAN1 (via sysfs)
+I1224 13:04:37.078890 11249 ThriftServer.cpp:862] Using thread manager (resource pools not enabled) on address/port 5971: runtime: thriftFlagNotSet, , thrift flag: false, enable gflag: false, disable gflag: false
+I1224 13:04:37.078950 11250 FruPresenceExplorer.cpp:49] Detected that FAN1 is present
+I1224 13:04:37.078956 11250 FruPresenceExplorer.cpp:34] Detecting presence of FAN2 (via sysfs)
+I1224 13:04:37.079375 11250 FruPresenceExplorer.cpp:49] Detected that FAN2 is present
+I1224 13:04:37.079379 11250 FruPresenceExplorer.cpp:34] Detecting presence of FAN3 (via sysfs)
+I1224 13:04:37.079797 11250 FruPresenceExplorer.cpp:49] Detected that FAN3 is present
+I1224 13:04:37.079800 11250 FruPresenceExplorer.cpp:34] Detecting presence of FAN4 (via sysfs)
+I1224 13:04:37.080223 11250 FruPresenceExplorer.cpp:49] Detected that FAN4 is present
+I1224 13:04:37.080228 11250 FruPresenceExplorer.cpp:34] Detecting presence of FAN5 (via sysfs)
+I1224 13:04:37.080648 11250 FruPresenceExplorer.cpp:49] Detected that FAN5 is present
+I1224 13:04:37.080652 11250 FruPresenceExplorer.cpp:34] Detecting presence of FAN6 (via sysfs)
+I1224 13:04:37.081168 11250 FruPresenceExplorer.cpp:49] Detected that FAN6 is present
+I1224 13:04:37.081172 11250 FruPresenceExplorer.cpp:34] Detecting presence of FAN7 (via sysfs)
+I1224 13:04:37.081692 11250 FruPresenceExplorer.cpp:49] Detected that FAN7 is present
+I1224 13:04:37.081696 11250 FruPresenceExplorer.cpp:34] Detecting presence of FAN8 (via sysfs)
+I1224 13:04:37.082217 11250 FruPresenceExplorer.cpp:49] Detected that FAN8 is present
+I1224 13:04:37.082221 11250 FruPresenceExplorer.cpp:34] Detecting presence of PSU_L (via sysfs)
+I1224 13:04:37.082643 11250 FruPresenceExplorer.cpp:49] Detected that PSU_L is present
+I1224 13:04:37.082647 11250 FruPresenceExplorer.cpp:34] Detecting presence of PSU_R (via sysfs)
+I1224 13:04:37.083167 11250 FruPresenceExplorer.cpp:49] Detected that PSU_R is present
+I1224 13:04:37.083172 11250 FruPresenceExplorer.cpp:34] Detecting presence of SMB (via sysfs)
+I1224 13:04:37.083692 11250 FruPresenceExplorer.cpp:49] Detected that SMB is present
+I1224 13:04:37.083703 11250 LedManager.cpp:45] Programming SMB LED with true
+I1224 13:04:37.084641 11250 LedManager.cpp:80] Wrote 1 to file /sys/class/leds/smb_led:blue:status/brightness
+I1224 13:04:37.085574 11250 LedManager.cpp:80] Wrote 0 to file /sys/class/leds/smb_led:amber:status/brightness
+I1224 13:04:37.085581 11250 LedManager.cpp:55] Programmed SMB LED with presence true
+I1224 13:04:37.085587 11250 LedManager.cpp:45] Programming PSU LED with true
+I1224 13:04:37.086517 11250 LedManager.cpp:80] Wrote 1 to file /sys/class/leds/psu_led:blue:status/brightness
+I1224 13:04:37.087448 11250 LedManager.cpp:80] Wrote 0 to file /sys/class/leds/psu_led:amber:status/brightness
+I1224 13:04:37.087453 11250 LedManager.cpp:55] Programmed PSU LED with presence true
+I1224 13:04:37.087459 11250 LedManager.cpp:45] Programming FAN LED with true
+I1224 13:04:37.088389 11250 LedManager.cpp:80] Wrote 1 to file /sys/class/leds/fan_led:blue:status/brightness
+I1224 13:04:37.089320 11250 LedManager.cpp:80] Wrote 0 to file /sys/class/leds/fan_led:amber:status/brightness
+I1224 13:04:37.089325 11250 LedManager.cpp:55] Programmed FAN LED with presence true
+I1224 13:04:37.089332 11250 LedManager.cpp:25] Programming system LED with true
+I1224 13:04:37.090264 11250 LedManager.cpp:80] Wrote 1 to file /sys/class/leds/sys_led:blue:status/brightness
+I1224 13:04:37.091195 11250 LedManager.cpp:80] Wrote 0 to file /sys/class/leds/sys_led:amber:status/brightness
+I1224 13:04:37.091201 11250 LedManager.cpp:34] Programmed system LED with true
